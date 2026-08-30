@@ -18,6 +18,10 @@ namespace BaltaTweaks
         [ModSettings.Description("If enabled, doors will no longer close themselfs.")]
         public bool NoAutoCloseDoorEnabled = true;
 
+        [Name("Show Tipup Condition")]
+        [ModSettings.Description("If enabled, shows the condition of the tip-up used on the Ice Fishing panel.")]
+        public bool ShowTipupConditionEnabled = true;
+
         protected override void OnConfirm()
         {
             base.OnConfirm();

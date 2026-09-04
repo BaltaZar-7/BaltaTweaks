@@ -27,7 +27,7 @@ namespace BaltaTweaks
         public bool ToolBeltExtraItemsEnabled = true;
 
         [Name("Toolbelt Affected Items")]
-        [ModSettings.Description("Number of tools the ToolBelt weight reduction buff applies to. Vanilla default: 3. (needs scene load for changes to apply)")]
+        [ModSettings.Description("Number of tools the ToolBelt weight reduction buff applies to. Vanilla default: 3. Needs scene load for changes to apply. If Clothing Expanded is installed, then you have these values only if equipping it in the accessory slot.")]
         [Slider(1, 10)]
         public int ToolBeltAffectedItems = 3;
 

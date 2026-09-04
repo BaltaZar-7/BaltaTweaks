@@ -18,7 +18,10 @@ namespace BaltaTweaks
 
         public static void InjectInto(WeightReductionBuff buff)
         {
-            if (buff == null)
+            if (buff == null || buff.m_GearItem == null)
+                return;
+
+            if (buff.m_GearItem.name != "GEAR_ToolBelt")
                 return;
 
             ApplyAffectedItemsCount(buff);
